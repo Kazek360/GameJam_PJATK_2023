@@ -5,4 +5,7 @@ public class PlayerConfig : ScriptableObject
 {
     public float speed;
     public float rotationSpeed;
+
+    public float startFuel;
+    public float fuelUsage;
 }
