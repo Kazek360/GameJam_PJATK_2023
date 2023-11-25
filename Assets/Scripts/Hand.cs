@@ -5,12 +5,15 @@ using UnityEngine;
 public class Hand : MonoBehaviour
 {
     
-    private GameObject _food;
     [SerializeField] private float _throwForce;
     [SerializeField] private Transform _throwPoint;
+    [SerializeField] private Transform _catchZone;
+    [SerializeField] private float _catchZoneRange;
+    [SerializeField] private LayerMask _catchZoneLayer;
     [SerializeField] private GameObject _point;
     [SerializeField] private int _numberOfPoints;
     [SerializeField] private float _spaceBetweenPoints;
+    private GameObject _food;
     private GameObject[] _points;
     private Vector2 _direction;
     private Color _gizmosColor;
@@ -18,6 +21,7 @@ public class Hand : MonoBehaviour
     [SerializeField] private float _maxThrowAngle;
     private bool _isFoodNotNull;
     private Rigidbody2D _foodRigidbody;
+    private List<GameObject> _foodList = new List<GameObject>();
 
     private void Start()
     {
@@ -39,7 +43,6 @@ public class Hand : MonoBehaviour
     
     private void Update()
     {
-        
         UpdateHeldFoodPosition();
         
         Vector2 throwPosition = transform.position;
@@ -50,6 +53,12 @@ public class Hand : MonoBehaviour
         throwAngle = Mathf.Clamp(throwAngle, -_maxThrowAngle, _maxThrowAngle);
         _direction = Quaternion.Euler(0, 0, throwAngle) * Vector2.right;
 
+
+        if (Input.GetButton("Fire1"))
+        {
+            
+        }
+        
         if (Input.GetButton("Fire2"))
         {
             for (int i = 0; i < _numberOfPoints; i++)
@@ -78,7 +87,8 @@ public class Hand : MonoBehaviour
     
     public void PickUpFood(GameObject food)
     {
-        _food = food;
+        _foodList.Add(food);
+        _food = _foodList[0];
         _foodRigidbody = _food.GetComponent<Rigidbody2D>();
         _food.transform.position = _throwPoint.position;
         _isFoodNotNull = true;
@@ -86,6 +96,7 @@ public class Hand : MonoBehaviour
     
     private void ResetFood()
     {
+        _foodList.Clear();
         _food = null;
         _isFoodNotNull = false;
         _foodRigidbody = null;
@@ -111,6 +122,17 @@ public class Hand : MonoBehaviour
         _gizmosColor = Color.red;
         Gizmos.color = _gizmosColor;
         Gizmos.DrawWireSphere(transform.position, .1f);
+        
+        _gizmosColor = Color.yellow;
+        Gizmos.color = _gizmosColor;
+        Gizmos.DrawWireSphere(_catchZone.position, _catchZoneRange);
+        
     }
-    
+
+    public bool IsFoodNotNull => _isFoodNotNull;
+
+    public Transform CatchZone => _catchZone;
+    public float CatchZoneRange => _catchZoneRange;
+    public LayerMask FoodLayerMask => _catchZoneLayer;
+
 }
