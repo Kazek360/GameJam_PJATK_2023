@@ -37,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        _rigidbody.velocity = Vector2.zero;
         _isColliding = true;
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -72,12 +71,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if(_fuel > 0)
         {
+            if (Input.GetAxis("Move") > 0)
+            {
+                _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _playerConfig.fuelUsage * Time.deltaTime;
+                Debug.Log($"Fuel:{_fuel}");
+            }
             _rigidbody.AddForce(transform.up * Input.GetAxis("Move") * _playerConfig.speed * Time.deltaTime, 
                 ForceMode2D.Impulse);
-            _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _playerConfig.fuelUsage * Time.deltaTime;
-            Debug.Log($"Fuel:{_fuel}");
+            
         }
-        _rigidbody.velocity *= 0.997f;
     }
 
     private void RefillFuel()
