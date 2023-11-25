@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5245218534036708171}
   - component: {fileID: 5076295368511820920}
-  - component: {fileID: 1827396668723933237}
+  - component: {fileID: 5781772173187183604}
   - component: {fileID: 5032845169049450131}
   m_Layer: 0
   m_Name: Refill Zone
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 16c455d030e6d824ebc583378d0a4323, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 709ed0ba3ac2d014dbb5d93dc70dfc30, type: 3}
   m_Color: {r: 0.754717, g: 0.74066806, b: 0.2242791, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1827396668723933237
-CircleCollider2D:
+--- !u!61 &5781772173187183604
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,8 +119,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
 --- !u!114 &5032845169049450131
 MonoBehaviour:
   m_ObjectHideFlags: 0
