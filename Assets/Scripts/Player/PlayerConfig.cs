@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerConfig : ScriptableObject
 {
     public float speed;
+    public float bouncePower;
     public float rotationSpeed;
 
     public float startFuel;

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
   speed: 5
+  bouncePower: 5
   rotationSpeed: 100
   startFuel: 100
   fuelUsage: 1

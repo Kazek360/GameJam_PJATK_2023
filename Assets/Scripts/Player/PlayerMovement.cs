@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
+    private bool _isColliding;
+
     private float _playerRotation;
 
     private float _fuel;
@@ -25,12 +27,22 @@ public class PlayerMovement : MonoBehaviour
     {
         ChangeRotation();
         MovePlayer();
-        UpdateFuel();
+        WallBounce();
     }
 
     private void OnDestroy()
     {
         PlayerEvents.OnFuelRefill -= RefillFuel;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        _rigidbody.velocity = Vector2.zero;
+        _isColliding = true;
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _isColliding = false;
     }
 
     private void ChangeRotation()
@@ -46,21 +58,26 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, _playerRotation);
     }
 
+    private void WallBounce()
+    {
+        if (Input.GetKeyDown(KeyCode.S) && _isColliding)
+        {
+            _playerRotation += 180;
+            transform.rotation = Quaternion.Euler(0, 0, _playerRotation);
+            _rigidbody.AddForce(transform.up * _playerConfig.bouncePower, ForceMode2D.Impulse);
+        }
+    }
+
     private void MovePlayer()
     {
         if(_fuel > 0)
         {
             _rigidbody.AddForce(transform.up * Input.GetAxis("Move") * _playerConfig.speed * Time.deltaTime, 
                 ForceMode2D.Impulse);
+            _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _playerConfig.fuelUsage * Time.deltaTime;
+            Debug.Log($"Fuel:{_fuel}");
         }
         _rigidbody.velocity *= 0.997f;
-    }
-
-    private void UpdateFuel()
-    {
-        _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _playerConfig.fuelUsage * Time.deltaTime;
-
-        Debug.Log($"Fuel:{_fuel}");
     }
 
     private void RefillFuel()
