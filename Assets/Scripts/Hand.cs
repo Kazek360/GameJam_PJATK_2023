@@ -80,23 +80,24 @@ public class Hand : MonoBehaviour
     {
         _food = food;
         _foodRigidbody = _food.GetComponent<Rigidbody2D>();
-        _foodRigidbody.velocity = Vector2.zero;
-        _food.SetActive(true);
         _food.transform.position = _throwPoint.position;
         _isFoodNotNull = true;
+    }
+    
+    private void ResetFood()
+    {
+        _food = null;
+        _isFoodNotNull = false;
+        _foodRigidbody = null;
     }
     
     private void Throw()
     {
         if (_isFoodNotNull)
         {
-            _food.SetActive(true);
-            _food.transform.position = _throwPoint.position;
             _foodRigidbody.velocity = _direction.normalized * _throwForce;
+            ResetFood();
         }
-
-        _food = null;
-        _isFoodNotNull = false;
     }
     
     private Vector2 PointPosition(float t)
