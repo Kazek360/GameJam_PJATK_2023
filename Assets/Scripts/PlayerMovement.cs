@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _hand = GetComponentInChildren<Hand>();
     }
-
     
     private void Update()
     {
@@ -33,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
             if (_food == null)
             {
                 _food = other.gameObject;
-                _food.SetActive(false);
                 _hand.PickUpFood(_food);
             }
         }
