@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody2D _rigidbody2D;
-    private GameObject _food;
     private Hand _hand;
     [SerializeField] private float _playerMovementSpeed;
     
@@ -23,18 +23,40 @@ public class PlayerMovement : MonoBehaviour
         //player movement left/right
         var horizontalInput = Input.GetAxis("Horizontal");
         _rigidbody2D.velocity = new Vector2(horizontalInput * _playerMovementSpeed, _rigidbody2D.velocity.y);
+        CatchFood();
     }
-    
-    private void OnTriggerEnter2D(Collider2D other)
+
+    public void CatchFood()
     {
-        if (other.CompareTag("Food"))
+        Collider2D[] foodInRange = Physics2D.OverlapCircleAll(
+            _hand.CatchZone.position,
+            _hand.CatchZoneRange,
+            _hand.FoodLayerMask
+        );
+        
+        if (foodInRange.Length > 0)
         {
-            if (_food == null)
+            foreach (Collider2D foodCollider in foodInRange)
             {
-                _food = other.gameObject;
-                _hand.PickUpFood(_food);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    _hand.PickUpFood(foodCollider.gameObject);
+                }
             }
         }
     }
+    
+    /*private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Food"))
+        {
+            if (_hand.IsFoodNotNull)
+            {
+                return;
+            }
+            _hand.PickUpFood(other.gameObject);
+        }
+    }
+    */
     
 }
