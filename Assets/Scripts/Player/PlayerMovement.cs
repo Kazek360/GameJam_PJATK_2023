@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private PlayerConfig _playerConfig;
+    [SerializeField] private PlayerConfig _config;
 
     private Rigidbody2D _rigidbody;
 
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        _fuel = _playerConfig.startFuel;
+        _fuel = _config.startFuel;
     }
 
     private void Update()
@@ -59,11 +59,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q))
         {
-            _playerRotation += _playerConfig.rotationSpeed * Time.deltaTime;
+            _playerRotation += _config.rotationSpeed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.E))
         {
-            _playerRotation -= _playerConfig.rotationSpeed * Time.deltaTime;
+            _playerRotation -= _config.rotationSpeed * Time.deltaTime;
         }
         transform.rotation = Quaternion.Euler(0, 0, _playerRotation);
     }
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerRotation += 180;
             transform.rotation = Quaternion.Euler(0, 0, _playerRotation);
-            _rigidbody.AddForce(transform.up * _playerConfig.bouncePower, ForceMode2D.Impulse);
+            _rigidbody.AddForce(transform.up * _config.bouncePower, ForceMode2D.Impulse);
         }
     }
 
@@ -84,9 +84,9 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetAxis("Move") > 0)
             {
-                _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _playerConfig.fuelUsage * Time.deltaTime;
+                _fuel -= Mathf.Abs(_rigidbody.velocity.magnitude) * _config.fuelUsage * Time.deltaTime;
             }
-            _rigidbody.AddForce(transform.up * Input.GetAxis("Move") * _playerConfig.speed * Time.deltaTime, 
+            _rigidbody.AddForce(transform.up * Input.GetAxis("Move") * _config.speed * Time.deltaTime, 
                 ForceMode2D.Impulse);
             
         }
@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void RefillFuel()
     {
-        _fuel = _playerConfig.startFuel;
+        _fuel = _config.startFuel;
     }
 
 }

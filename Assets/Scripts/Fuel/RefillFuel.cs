@@ -6,6 +6,9 @@ public class RefillFuel : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerEvents.RefillFuel();
+        if (collision.CompareTag("Player"))
+        {
+            PlayerEvents.RefillFuel();
+        }
     }
 }
