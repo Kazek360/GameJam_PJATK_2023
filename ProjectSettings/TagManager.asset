@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ingredient
+  - Food
+  - Meat
+  - Vegetable
+  - Fish
+  - Alien
+  - Oven
   layers:
   - Default
   - TransparentFX
@@ -11,9 +18,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Background
-  - Player
-  - Foreground
+  - Food
+  - Ingredient
+  - Oven
   - 
   - 
   - 
@@ -40,19 +47,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 2813936599
-    locked: 0
-  - name: Background
-    uniqueID: 1839344169
-    locked: 0
-  - name: Ground
-    uniqueID: 2304498265
-    locked: 0
-  - name: Items
-    uniqueID: 3087294689
-    locked: 0
-  - name: Foreground
-    uniqueID: 4005801293
     locked: 0
