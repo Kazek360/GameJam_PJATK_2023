@@ -184,8 +184,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -752.64984, w: 0}
+  m_margin: {x: 0, y: 7.637562, z: -752.64984, w: -3.8188057}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -318,8 +318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kazimierz Piontek - content
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -343,8 +343,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -167.02405, y: 0, z: -169.22177, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -527,8 +527,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kinga Mendyk - content
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -552,8 +552,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -163.72751, y: 0, z: -170.32065, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -768,7 +768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -260, y: -353}
+  m_AnchoredPosition: {x: -260, y: -349}
   m_SizeDelta: {x: 618.87, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288907385
@@ -795,8 +795,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2235,7 +2235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -260, y: -134}
+  m_AnchoredPosition: {x: -264, y: -130}
   m_SizeDelta: {x: 618.87, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170434289
@@ -2262,8 +2262,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -752.64984, w: 0}
+  m_margin: {x: 0, y: 0, z: -745.0125, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2437,8 +2437,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Oskar Rojek - software
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2462,8 +2462,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2498,7 +2498,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -164.82635, y: 0, z: -170.32065, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2547,7 +2547,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 407.9, y: -248.79997}
-  m_SizeDelta: {x: 681.98, y: 51.55}
+  m_SizeDelta: {x: 1008.34, y: 51.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240245484
 MonoBehaviour:
@@ -2571,8 +2571,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Juliusz Kupinski - software
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2596,8 +2596,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2892,7 +2892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 665, y: -424}
+  m_AnchoredPosition: {x: 665, y: -462}
   m_SizeDelta: {x: 245, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481241994
@@ -3042,7 +3042,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.686436
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3075,7 +3075,7 @@ Transform:
   m_GameObject: {fileID: 1490875778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.42, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3183,7 +3183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -260, y: -18}
+  m_AnchoredPosition: {x: -260, y: -16}
   m_SizeDelta: {x: 618.87, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540586181
@@ -3210,8 +3210,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -88.35455, w: 0}
+  m_margin: {x: 0, y: 0, z: -395.7666, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3964,8 +3964,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
-  m_sharedMaterial: {fileID: 2311295310780435318, guid: 4ffb034845bf23b40849899ec24a7c5a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
+  m_sharedMaterial: {fileID: -358335758779001524, guid: f518b7dec1a80a648999a6c2402f5bdf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
