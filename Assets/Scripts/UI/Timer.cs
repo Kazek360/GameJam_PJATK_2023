@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -35,11 +36,17 @@ public class Timer : MonoBehaviour
                 DisplayTime(_timeRemaining);
             }
         }
+
+        if (_timeRemaining <= 0)
+        {
+            SceneManager.LoadScene("ResultsScreen");
+        }
+        
     }
 
     private void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay -= 1;
+        timeToDisplay += 1;
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);

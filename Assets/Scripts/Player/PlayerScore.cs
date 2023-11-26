@@ -1,37 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScore : MonoBehaviour
+namespace Player
 {
-    private int _scoreValue;
-    private int _score
+    public class PlayerScore : MonoBehaviour
     {
-        get => _scoreValue;
-        set
+        private int _scoreValue;
+        private int _score
         {
-            _scoreValue = value;
-            PlayerEvents.UpdateScore(value);
+            get => _scoreValue;
+            set
+            {
+                _scoreValue = value;
+                PlayerEvents.UpdateScore(value);
+            }
         }
-    }
 
-    private void Awake()
-    {
-        PlayerEvents.OnOrderComplete += IncreaseScore;
-    }
+        private void Awake()
+        {
+            PlayerEvents.OnOrderComplete += IncreaseScore;
+        }
 
-    private void Start()
-    {
-        _score = 0;
-    }
+        private void Start()
+        {
+            _score = 0;
+        }
 
-    private void OnDestroy()
-    {
-        PlayerEvents.OnOrderComplete -= IncreaseScore;
-    }
+        private void OnDestroy()
+        {
+            PlayerEvents.OnOrderComplete -= IncreaseScore;
+        }
 
-    private void IncreaseScore()
-    {
-        _score += 10;
+        private void IncreaseScore()
+        {
+            _score += 10;
+        }
     }
 }
