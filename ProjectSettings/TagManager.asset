@@ -12,6 +12,7 @@ TagManager:
   - Alien
   - Oven
   - Snot
+  - SnotSalad
   layers:
   - Default
   - TransparentFX
