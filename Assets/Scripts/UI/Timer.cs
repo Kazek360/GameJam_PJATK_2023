@@ -47,7 +47,7 @@ public class Timer : MonoBehaviour
 
     private void IncreaseTime()
     {
-        _timeRemaining += 10;
+        _timeRemaining += 15;
         float minutes = Mathf.FloorToInt(_timeRemaining / 60);
         float seconds = Mathf.FloorToInt(_timeRemaining % 60);
         _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
