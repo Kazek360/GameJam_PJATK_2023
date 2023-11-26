@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ingredient
+  - Food
+  - Meat
+  - Vegetable
+  - Fish
+  - Alien
+  - Oven
+  - Snot
   layers:
   - Default
   - TransparentFX
@@ -11,11 +19,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Background
-  - Ground
-  - Foreground
-  - Player
-  - UI
+  - Food
+  - Ingredient
+  - Oven
+  - 
+  - 
   - 
   - 
   - 
@@ -41,18 +49,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: UI
+    uniqueID: 4139889625
+    locked: 0
   - name: Background
-    uniqueID: 2813936599
+    uniqueID: 1248042061
     locked: 0
   - name: Ground
-    uniqueID: 1839344169
+    uniqueID: 1194206187
     locked: 0
-  - name: Foreground
-    uniqueID: 2304498265
+  - name: Food
+    uniqueID: 1361793583
     locked: 0
   - name: Player
-    uniqueID: 3087294689
+    uniqueID: 2565642401
     locked: 0
-  - name: UI
-    uniqueID: 4005801293
+  - name: Foreground
+    uniqueID: 4040511271
     locked: 0
