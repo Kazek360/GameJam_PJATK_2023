@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ResultsScreen.unity
     guid: 900995487e32d04419b22ae3804fc179
+  - enabled: 1
+    path: Assets/Scenes/Sound Test.unity
+    guid: 7d1b18813e9c71046a7812103c187e4a
   m_configObjects: {}

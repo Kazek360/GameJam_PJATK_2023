@@ -32,6 +32,10 @@ public class AudioManager : MonoBehaviour
         {
             Play("Level Music");
         }
+        else if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            Play("Menu Music");
+        }
     }
 
     public void Play(string sound)
