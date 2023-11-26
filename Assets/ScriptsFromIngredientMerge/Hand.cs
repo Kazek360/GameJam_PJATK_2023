@@ -87,6 +87,7 @@ public class Hand : MonoBehaviour
     
     public void PickUpFood(GameObject food)
     {
+        AudioManager.instance.Play("Pick up");
         _foodList.Add(food);
         _food = _foodList[0];
         _foodRigidbody = _food.GetComponent<Rigidbody2D>();
@@ -106,6 +107,7 @@ public class Hand : MonoBehaviour
     {
         if (_isFoodNotNull)
         {
+            AudioManager.instance.Play("Throw");
             _foodRigidbody.velocity = _direction.normalized * _throwForce;
             ResetFood();
         }
