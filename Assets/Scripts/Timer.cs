@@ -10,14 +10,22 @@ public class Timer : MonoBehaviour
     private bool _isTimeRunning;
     [SerializeField] private TMP_Text _timerText;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
+    {
+        PlayerEvents.OnOrderComplete += IncreaseTime;
+    }
+    private void Start()
     {
         _isTimeRunning = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
+    {
+        PlayerEvents.OnOrderComplete -= IncreaseTime;
+    }
+
+    private void Update()
     {
         if(_isTimeRunning)
         {
@@ -34,6 +42,14 @@ public class Timer : MonoBehaviour
         timeToDisplay -= 1;
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    private void IncreaseTime()
+    {
+        _timeRemaining += 10;
+        float minutes = Mathf.FloorToInt(_timeRemaining / 60);
+        float seconds = Mathf.FloorToInt(_timeRemaining % 60);
         _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
