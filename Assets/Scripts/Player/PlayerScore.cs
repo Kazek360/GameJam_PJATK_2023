@@ -34,5 +34,12 @@ namespace Player
         {
             _score += 10;
         }
+        
+        public int GetScore()
+        {
+            return _score;
+        }
+        
     }
+    
 }

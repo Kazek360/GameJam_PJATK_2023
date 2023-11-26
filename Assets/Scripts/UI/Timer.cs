@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,7 @@ public class Timer : MonoBehaviour
 
     [SerializeField] private float _timeRemaining;
     private bool _isTimeRunning;
+    [SerializeField] private PlayerScore _playerScore;
     [SerializeField] private TMP_Text _timerText;
 
 
@@ -39,6 +41,7 @@ public class Timer : MonoBehaviour
 
         if (_timeRemaining <= 0)
         {
+            PlayerPrefs.SetInt("Score",_playerScore.GetScore());
             SceneManager.LoadScene("ResultsScreen");
         }
         
