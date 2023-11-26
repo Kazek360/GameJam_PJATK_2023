@@ -12,6 +12,11 @@ public class ResultsManager : MonoBehaviour
     {
         _text.text = PlayerPrefs.GetInt("Score").ToString();
     }
+
+    private void Start()
+    {
+        AudioManager.instance.Play("Results Music");
+    }
     
     public void BackPressed()
     {

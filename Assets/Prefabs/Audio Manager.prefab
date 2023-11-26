@@ -113,5 +113,5 @@ MonoBehaviour:
     mixer: {fileID: 0}
     volume: 0.505
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
