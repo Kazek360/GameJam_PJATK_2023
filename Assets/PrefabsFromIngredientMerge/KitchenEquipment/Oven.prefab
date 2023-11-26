@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4481770421216852893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6844011667003033373}
+  m_Layer: 8
+  m_Name: IngrCatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6844011667003033373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481770421216852893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1884263499501482178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6030735718414452731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 4592930615334695772}
   - component: {fileID: 5078585047816567068}
   - component: {fileID: 3617201041109075076}
+  - component: {fileID: 105791859740238577}
   m_Layer: 8
   m_Name: Oven
   m_TagString: Oven
@@ -33,6 +65,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7530190683259812855}
+  - {fileID: 6844011667003033373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4592930615334695772
@@ -73,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1438022765
+  m_SortingLayerID: 1194206187
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -148,6 +181,26 @@ MonoBehaviour:
   - Vegetable
   - Snot
   _ovenIngredientGrabberZone: {fileID: 7530190683259812855}
+  _ovenIngredientGrabberZoneRange: 1.3
+  _ingredientLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &105791859740238577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6030735718414452731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757707355a506604da8e171ba097c73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeTags:
+  - Vegetable
+  - Snot
+  _ovenIngredientGrabberZone: {fileID: 6844011667003033373}
   _ovenIngredientGrabberZoneRange: 1.3
   _ingredientLayerMask:
     serializedVersion: 2

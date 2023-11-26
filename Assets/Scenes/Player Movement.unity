@@ -294,36 +294,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &608544554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6030735718414452731, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-  m_PrefabInstance: {fileID: 2073617662}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &608544555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608544554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 757707355a506604da8e171ba097c73d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recipeTags:
-  - Vegetable
-  - Snot
-  _ovenIngredientGrabberZone: {fileID: 1816894323}
-  _ovenIngredientGrabberZoneRange: 1.3
-  _ingredientLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!4 &608544558 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1884263499501482178, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-  m_PrefabInstance: {fileID: 2073617662}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &782743299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,37 +1423,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bddd17d2ea5177f40876e0eca68e2755, type: 3}
---- !u!1 &1816894322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1816894323}
-  m_Layer: 8
-  m_Name: IngrCatcher
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1816894323
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816894322}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 608544558}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1871154917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,24 +1697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oven
       objectReference: {fileID: 0}
-    - target: {fileID: 6030735718414452731, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6030735718414452731, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-      propertyPath: m_TagString
-      value: Oven
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1884263499501482178, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1816894323}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6030735718414452731, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 608544555}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a733a5cd3274ec409816358f383bbb2, type: 3}
 --- !u!1 &2144940335
 GameObject:
@@ -1825,18 +1750,6 @@ PrefabInstance:
     - target: {fileID: 217558129866777523, guid: c52ce178067d61042b2e648a949e6a71, type: 3}
       propertyPath: m_Name
       value: Refill Zone
-      objectReference: {fileID: 0}
-    - target: {fileID: 217558129866777523, guid: c52ce178067d61042b2e648a949e6a71, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5076295368511820920, guid: c52ce178067d61042b2e648a949e6a71, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5076295368511820920, guid: c52ce178067d61042b2e648a949e6a71, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1839344169
       objectReference: {fileID: 0}
     - target: {fileID: 5245218534036708171, guid: c52ce178067d61042b2e648a949e6a71, type: 3}
       propertyPath: m_LocalPosition.x

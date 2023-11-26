@@ -52,3 +52,18 @@ TagManager:
   - name: UI
     uniqueID: 4139889625
     locked: 0
+  - name: Background
+    uniqueID: 1248042061
+    locked: 0
+  - name: Ground
+    uniqueID: 1194206187
+    locked: 0
+  - name: Food
+    uniqueID: 1361793583
+    locked: 0
+  - name: Player
+    uniqueID: 2565642401
+    locked: 0
+  - name: Foreground
+    uniqueID: 4040511271
+    locked: 0
