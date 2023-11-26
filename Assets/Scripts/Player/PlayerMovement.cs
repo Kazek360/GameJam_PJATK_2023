@@ -35,13 +35,12 @@ namespace Player
             _rigidbody = GetComponent<Rigidbody2D>();
             _hand = GetComponentInChildren<Hand>();
             PlayerEvents.OnFuelRefill += RefillFuel;
-            Sound[] soundArray = AudioManager.instance.sounds;
-            _sound = Array.Find(soundArray, item => item.soundName == "Jetpack");
         }
 
         private void Start()
         {
             _fuel = _config.startFuel;
+            _sound = Array.Find(AudioManager.instance.sounds, item => item.soundName == "Jetpack");
         }
 
         private void Update()
@@ -51,14 +50,14 @@ namespace Player
             WallBounce();
             CatchFood();
             
-            if (Input.GetKeyDown(KeyCode.W))
+            if (_fuel > 0 && Input.GetKeyDown(KeyCode.W))
             {
                 if(!_sound.source.isPlaying) {
                     _sound.source.Play();
                 }
             }
      
-            if (Input.GetKeyUp(KeyCode.W)) {
+            if (_fuel > 0 && Input.GetKeyUp(KeyCode.W)) {
                 _sound.source.Stop();
             }
         }
