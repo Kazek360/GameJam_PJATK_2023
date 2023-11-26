@@ -471,6 +471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5359324789919253774}
   - {fileID: 1257362920}
   - {fileID: 983535993}
   - {fileID: 1072948731}
@@ -1987,7 +1988,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -155077671
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4969,7 +4970,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 771374283}
     m_Modifications:
     - target: {fileID: 5015181470033744440, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
       propertyPath: m_Name
@@ -4993,15 +4994,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150449344951530125, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9150449344951530125, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9150449344951530125, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9150449344951530125, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5020,6 +5021,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
+--- !u!4 &5359324789919253774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9150449344951530125, guid: ba615255dd53d20489626bec1dad54c6, type: 3}
+  m_PrefabInstance: {fileID: 5359324789919253773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5804597701800336186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5091,4 +5097,3 @@ SceneRoots:
   - {fileID: 105292593}
   - {fileID: 1150346375}
   - {fileID: 161259462}
-  - {fileID: 5359324789919253773}
