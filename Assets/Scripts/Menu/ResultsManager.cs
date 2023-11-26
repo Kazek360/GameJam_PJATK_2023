@@ -15,6 +15,7 @@ public class ResultsManager : MonoBehaviour
     
     public void BackPressed()
     {
+        AudioManager.instance.Play("Button");
         SceneManager.LoadScene("MainMenu");
     }
 }
