@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBackgroundMusic()
     {
-        if (SceneManager.GetActiveScene().name == "Sound Test")
+        if (SceneManager.GetActiveScene().name == "Level")
         {
             Play("Level Music");
         }
