@@ -18,7 +18,6 @@ public class Score : MonoBehaviour
     }
     private void UpdateScore(int currentScore)
     {
-        Debug.Log("Elo ¿elo");
         _score.text = $"{currentScore}";
     }
 }

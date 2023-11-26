@@ -1718,6 +1718,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1822818429827217538, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
+      propertyPath: _playerScore
+      value: 
+      objectReference: {fileID: 644553860}
+    - target: {fileID: 1822818429827217538, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: _timeRemaining
       value: 40
       objectReference: {fileID: 0}
