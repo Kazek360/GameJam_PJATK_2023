@@ -87,3 +87,17 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - soundName: Munch
+    clip: {fileID: 8300000, guid: 6291e1bd64a83b84b9c1a4f700666394, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.505
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - soundName: Level Music
+    clip: {fileID: 8300000, guid: d03f3e2a5c2062640883090c8294f558, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.505
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
