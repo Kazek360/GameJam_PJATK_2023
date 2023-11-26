@@ -11,7 +11,9 @@ namespace ScriptsFromIngredientMerge
         [SerializeField] private Transform _ovenIngredientGrabberZone;
         [SerializeField] private float _ovenIngredientGrabberZoneRange;
         [SerializeField] private LayerMask _ingredientLayerMask;
+        [SerializeField] private string _foodPrefabPath;
         private Color _gizmosColor;
+        
 
         private void Update()
         {
@@ -85,7 +87,7 @@ namespace ScriptsFromIngredientMerge
 
         private void CreateDish()
         {
-            GameObject dishPrefab = Instantiate(Resources.Load("Dishes/SnotSalad")) as GameObject;
+            GameObject dishPrefab = Instantiate(Resources.Load(_foodPrefabPath)) as GameObject;
 
             float offsetX = -2f;
             float offsetY = 1f;
