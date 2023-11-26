@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -17,6 +18,7 @@ namespace Player
         private float _fuelValue;
 
         private float _fuel
+        
         {
             get => _fuelValue;
             set
@@ -25,12 +27,16 @@ namespace Player
                 PlayerEvents.UpdateFuel(value);
             }
         }
+        
+        private Sound _sound;
 
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
             _hand = GetComponentInChildren<Hand>();
             PlayerEvents.OnFuelRefill += RefillFuel;
+            Sound[] soundArray = AudioManager.instance.sounds;
+            _sound = Array.Find(soundArray, item => item.soundName == "Jetpack");
         }
 
         private void Start()
@@ -44,6 +50,17 @@ namespace Player
             MovePlayer();
             WallBounce();
             CatchFood();
+            
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                if(!_sound.source.isPlaying) {
+                    _sound.source.Play();
+                }
+            }
+     
+            if (Input.GetKeyUp(KeyCode.W)) {
+                _sound.source.Stop();
+            }
         }
         
         public void CatchFood()
