@@ -11,6 +11,8 @@ namespace ScriptsFromIngredientMerge
         [SerializeField] private Transform _ovenIngredientGrabberZone;
         [SerializeField] private float _ovenIngredientGrabberZoneRange;
         [SerializeField] private LayerMask _ingredientLayerMask;
+        [SerializeField] private Transform _spawnPoint;
+        [SerializeField] private GameObject _dish;
         private Color _gizmosColor;
 
         private void Update()
@@ -30,33 +32,15 @@ namespace ScriptsFromIngredientMerge
             {
                 foreach (Collider2D ingredientCollider in ingredientsInRange)
                 {
-                
                     string ingredientTag = ingredientCollider.tag;
 
-                
                     ingredientsInside.Add(ingredientTag);
 
-                
                     Destroy(ingredientCollider.gameObject);
                 }
                 CheckRecipe();
             }
         }
-        /*
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Ingredient"))
-        {
-            string ingredientTag = other.tag;
-            
-            ingredientsInside.Add(ingredientTag);
-            
-            Destroy(other.gameObject);
-            
-            CheckRecipe();
-        }
-    }
-    */
 
         private void CheckRecipe()
         {
@@ -72,7 +56,7 @@ namespace ScriptsFromIngredientMerge
             {
                 for (int i = 0; i < ingredientsInside.Count; i++)
                 {
-                    if (ingredientsInside[i] != recipeTags[i])
+                    if (!ingredientsInside.Contains(recipeTags[i]))
                     {
                         return false;
                     }
@@ -86,13 +70,7 @@ namespace ScriptsFromIngredientMerge
         private void CreateDish()
         {
             AudioManager.instance.Play("Combine");
-            GameObject dishPrefab = Instantiate(Resources.Load("Dishes/SnotSalad")) as GameObject;
-
-            float offsetX = -2f;
-            float offsetY = 1f;
-
-            var position = transform.position;
-            dishPrefab.transform.position = new Vector2(position.x + offsetX, position.y + offsetY);
+            GameObject dishPrefab = Instantiate(_dish, _spawnPoint.position, Quaternion.identity);
         
             ingredientsInside.Clear();
         }
@@ -102,7 +80,6 @@ namespace ScriptsFromIngredientMerge
             _gizmosColor = Color.yellow;
             Gizmos.color = _gizmosColor;
             Gizmos.DrawWireSphere(_ovenIngredientGrabberZone.position, _ovenIngredientGrabberZoneRange);
-        
         }
     
     }
