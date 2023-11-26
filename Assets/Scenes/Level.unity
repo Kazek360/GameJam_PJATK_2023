@@ -1719,7 +1719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1822818429827217538, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: _timeRemaining
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2090962856969278632, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_AnchorMax.x
