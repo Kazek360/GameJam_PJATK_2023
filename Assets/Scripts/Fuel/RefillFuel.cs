@@ -8,6 +8,7 @@ public class RefillFuel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.instance.Play("Refuel");
             PlayerEvents.RefillFuel();
         }
     }

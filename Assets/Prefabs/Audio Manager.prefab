@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3537088161747841469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5990182611233303885}
+  - component: {fileID: 8776030507958983266}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5990182611233303885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537088161747841469}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7417388, y: 0.31187072, z: 0.035147615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8776030507958983266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537088161747841469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8ceeb1d24e57948a481c5e9b4bde92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - soundName: Jetpack
+    clip: {fileID: 8300000, guid: 286ad2a486e446d4e8cffe97c9d03b1a, type: 3}
+    mixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - soundName: Pick up
+    clip: {fileID: 8300000, guid: aec6b2c59bf1d8d448c70d579ee39019, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.667
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - soundName: Throw
+    clip: {fileID: 8300000, guid: 67bcaf73aba34494c9dfc531d19bb7e0, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.667
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - soundName: Combine
+    clip: {fileID: 8300000, guid: c4db6f517427095478fd2f66ef153f43, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.667
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - soundName: Button
+    clip: {fileID: 8300000, guid: 4e03128b68ffed941bb3c94dfe98c523, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.667
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - soundName: Refuel
+    clip: {fileID: 8300000, guid: c6f965b7bf6f6a74585e15acc807bf66, type: 3}
+    mixer: {fileID: 0}
+    volume: 0.505
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

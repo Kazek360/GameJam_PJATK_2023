@@ -20,23 +20,27 @@ public class MenuManager : MonoBehaviour
     #region  Main View
     public void StartClicked(string sceneName)
     {
+        AudioManager.instance.Play("Button");
         SceneManager.LoadScene(sceneName);
     }
 
     public void InstructionsClicked()
     {
+        AudioManager.instance.Play("Button");
         _mainView.SetActive(false);
         _instructionsView.SetActive(true);
     }
 
     public void CreditsClicked()
     {
+        AudioManager.instance.Play("Button");
         _mainView.SetActive(false);
         _creditsView.SetActive(true);
     }
 
     public void ExitClicked()
     {
+        AudioManager.instance.Play("Button");
         #if UNITY_EDITOR
         EditorApplication.isPlaying = false;
         #else
@@ -47,6 +51,7 @@ public class MenuManager : MonoBehaviour
 
     public void BackClicked()
     {
+        AudioManager.instance.Play("Button");
         _mainView.SetActive(true);
         _instructionsView.SetActive(false);
         _creditsView.SetActive(false);

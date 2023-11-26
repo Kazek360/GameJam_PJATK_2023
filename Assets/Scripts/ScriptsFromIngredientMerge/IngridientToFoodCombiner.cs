@@ -85,6 +85,7 @@ namespace ScriptsFromIngredientMerge
 
         private void CreateDish()
         {
+            AudioManager.instance.Play("Combine");
             GameObject dishPrefab = Instantiate(Resources.Load("Dishes/SnotSalad")) as GameObject;
 
             float offsetX = -2f;
