@@ -13,7 +13,6 @@ namespace Player
 
         private float _playerRotation;
 
-
         private float _fuelValue;
 
         private float _fuel
