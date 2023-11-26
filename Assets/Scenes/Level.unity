@@ -1634,6 +1634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 829234849425705592, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -479
+      objectReference: {fileID: 0}
     - target: {fileID: 2090962856969278632, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1748,7 +1752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5678081111291446097, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -364
+      value: -460
       objectReference: {fileID: 0}
     - target: {fileID: 6652988154422533080, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_Camera
@@ -1760,7 +1764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992802506926750663, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8063943561006544289, guid: 2d9f60dbb7d729c4fa3d3e2994bfece7, type: 3}
       propertyPath: m_AnchorMax.y
