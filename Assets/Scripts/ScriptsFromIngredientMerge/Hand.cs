@@ -81,6 +81,7 @@ public class Hand : MonoBehaviour
     {
         if (_isFoodNotNull)
         {
+            _food.layer = LayerMask.NameToLayer("Default");
             _food.transform.position = _throwPoint.position;
         }
     }
@@ -108,6 +109,7 @@ public class Hand : MonoBehaviour
         if (_isFoodNotNull)
         {
             AudioManager.instance.Play("Throw");
+            _food.layer = LayerMask.NameToLayer("Ingredient");
             _foodRigidbody.velocity = _direction.normalized * _throwForce;
             ResetFood();
         }
