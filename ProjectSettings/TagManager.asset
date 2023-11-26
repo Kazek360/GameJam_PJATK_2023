@@ -11,6 +11,7 @@ TagManager:
   - Fish
   - Alien
   - Oven
+  - Snot
   layers:
   - Default
   - TransparentFX
